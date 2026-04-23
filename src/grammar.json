@@ -357,7 +357,7 @@
         },
         {
           "type": "STRING",
-          "value": ")"
+          "value": "*)"
         }
       ]
     }
