@@ -72,6 +72,12 @@ module.exports = grammar({
     integer: ($) => /[0-9]+/,
 
     // Comments (* ... *)
-    comment: ($) => seq("(*", /[^*]*\*+([^)*][^*]*\*+)*/, "*)"),
+    comment: ($) => seq("(*", optional($._comment_content), "*)"),
+
+    _comment_content: ($) =>
+      choice(
+        /[^*]+/, // Any characters except *
+        /\*+[^)]/, // One or more * followed by anything EXCEPT )
+      ),
   },
 });

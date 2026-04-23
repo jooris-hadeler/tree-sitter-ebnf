@@ -352,12 +352,33 @@
           "value": "(*"
         },
         {
-          "type": "PATTERN",
-          "value": "[^*]*\\*+([^)*][^*]*\\*+)*"
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "_comment_content"
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
         },
         {
           "type": "STRING",
           "value": "*)"
+        }
+      ]
+    },
+    "_comment_content": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "PATTERN",
+          "value": "[^*]+"
+        },
+        {
+          "type": "PATTERN",
+          "value": "\\*+[^)]"
         }
       ]
     }
