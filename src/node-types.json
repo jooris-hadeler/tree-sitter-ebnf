@@ -1,0 +1,293 @@
+[
+  {
+    "type": "comment",
+    "named": true,
+    "extra": true,
+    "fields": {}
+  },
+  {
+    "type": "definitions_list",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "single_definition",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "grouped_sequence",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "definitions_list",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "optional_sequence",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "definitions_list",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "repeated_sequence",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "definitions_list",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "single_definition",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "syntactic_term",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "root": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "syntax_rule",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "special_sequence",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "syntactic_factor",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "integer",
+          "named": true
+        },
+        {
+          "type": "syntactic_primary",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "syntactic_primary",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "empty_sequence",
+          "named": true
+        },
+        {
+          "type": "grouped_sequence",
+          "named": true
+        },
+        {
+          "type": "meta_identifier",
+          "named": true
+        },
+        {
+          "type": "optional_sequence",
+          "named": true
+        },
+        {
+          "type": "repeated_sequence",
+          "named": true
+        },
+        {
+          "type": "special_sequence",
+          "named": true
+        },
+        {
+          "type": "terminal_string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "syntactic_term",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "syntactic_factor",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "syntax_rule",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "definitions_list",
+          "named": true
+        },
+        {
+          "type": "meta_identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "terminal_string",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "\"",
+    "named": false
+  },
+  {
+    "type": "'",
+    "named": false
+  },
+  {
+    "type": "(",
+    "named": false
+  },
+  {
+    "type": "(*",
+    "named": false
+  },
+  {
+    "type": "(/",
+    "named": false
+  },
+  {
+    "type": "(:",
+    "named": false
+  },
+  {
+    "type": ")",
+    "named": false
+  },
+  {
+    "type": "*",
+    "named": false
+  },
+  {
+    "type": ",",
+    "named": false
+  },
+  {
+    "type": "-",
+    "named": false
+  },
+  {
+    "type": "/)",
+    "named": false
+  },
+  {
+    "type": ":)",
+    "named": false
+  },
+  {
+    "type": ";",
+    "named": false
+  },
+  {
+    "type": "=",
+    "named": false
+  },
+  {
+    "type": "?",
+    "named": false
+  },
+  {
+    "type": "[",
+    "named": false
+  },
+  {
+    "type": "]",
+    "named": false
+  },
+  {
+    "type": "empty_sequence",
+    "named": true
+  },
+  {
+    "type": "integer",
+    "named": true
+  },
+  {
+    "type": "meta_identifier",
+    "named": true
+  },
+  {
+    "type": "{",
+    "named": false
+  },
+  {
+    "type": "|",
+    "named": false
+  },
+  {
+    "type": "}",
+    "named": false
+  }
+]
